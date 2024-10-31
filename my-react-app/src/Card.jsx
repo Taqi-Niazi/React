@@ -5,13 +5,13 @@ function Card(){
     let isDown = false;
     let startX;
     let scrollLeft;
-    Cards.addEventListner('mousedown',  (e)=>{
+    Cards.addEventListener('mousedown',  (e)=>{
         isDown = true;
         Cards.classList.add('active');
         startX = e.pageX - Cards.offsetLeft;
         scrollLeft = container.scrollLeft;
     });
-    Cards.addEventListner('mouseleave' , ()=>{
+    Cards.addEventListener('mouseleave' , ()=>{
         isDown = false;
         Cards.classList.remove('active');
     });
@@ -29,7 +29,7 @@ function Card(){
 
     return(
         <div>
-            <div className="Cards">
+         <div className="Cards">
             <div className="card">
             <img className="card-image" src="https://via.placeholder.com/150" alt="profile picture"></img>
             <h2 className="card-title">This is title</h2>
@@ -84,7 +84,7 @@ function Card(){
             <p className="card-text">This title belongs to a card in react</p>
 
              </div>
-        </div>           
+         </div>           
         
         </div>
         

@@ -1,10 +1,10 @@
 // import { Router } from "react-router-dom"
-import Navbar from "./Navbar"
+import AddRem from "./reactex/addRem"
 function App() {
 
   return (
     <>
-    <Navbar/>
+    <AddRem/>
       
     </>
   )

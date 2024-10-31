@@ -180,7 +180,7 @@
   padding: 0;
   display: flex;
 }
-body{
+.clock-body{
   background-image: url("https://images.hdqwalls.com/wallpapers/breathtaking-scenery-landscape-view-m4.jpg");
   background-position: center;
   background-repeat: no-repeat;
@@ -191,7 +191,7 @@ body{
   justify-content: center;
   min-height: 100vh;
   align-items: center;
-}
+} */
 .clock-div{
   backdrop-filter: blur(3px);
 }
@@ -202,12 +202,12 @@ body{
   font-weight: bold;
   text-shadow: 3px 3px 5px black;
 }
-body{
+/* body{
   display: flex;
   flex-direction: column;
   align-items: center;
-  background-color: rgb(223, 220, 220);
-}
+  background-color: rgb(223, 220, 220); 
+}*/
 .display{
   display: flex;
   flex-direction: column;

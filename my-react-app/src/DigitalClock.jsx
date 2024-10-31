@@ -31,8 +31,10 @@ function DigitalClock(){
 
 
     return(
-        <div className='clock-div'>
-              <span className='clock'>{clockFormat()}</span>
+        <div className='clock-body'>
+          <div className='clock-div'>
+                <span className='clock'>{clockFormat()}</span>
+          </div>
         </div>
     )
 }

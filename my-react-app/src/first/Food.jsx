@@ -1,4 +1,3 @@
-
 function Food(){
     const food1 = "Peach";
     const food2 = "Plum";

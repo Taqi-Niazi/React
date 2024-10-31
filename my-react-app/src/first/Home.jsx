@@ -1,28 +1,28 @@
 import {Link} from 'react-router-dom';
-
+import "./styleHome.css";
 function Home(){
     return(
-    <div>
-        <ul>
-            <li><Link to="/Food">Food</Link></li>
-            <li><Link to="/Footer">Footer</Link></li>
-            <li><Link to="/Myheader">Myheader</Link></li>
-            <li><Link to="/Button">Button</Link></li>
-            <li><Link to="/Card">Card</Link></li>
-            <li><Link to="/ClickEvent">ClickEvent</Link></li>
-            <li><Link to="/ColorPick">ColorPick</Link></li>
-            <li><Link to="/componentA">ComponentA</Link></li>
-            <li><Link to="/DigitalClock">DigitalClock</Link></li>
-            <li><Link to="/Fruits">Fruits</Link></li>
-            <li><Link to="/List">List</Link></li>
-            <li><Link to="/MyComponent">MyComponent</Link></li>
-            <li><Link to="/OnChange">OnChange</Link></li>
-            <li><Link to="/Planets">Planets</Link></li>
-            <li><Link to="/ToDoList">ToDoList</Link></li>
-            <li><Link to="/Updater">Updater</Link></li>
-            <li><Link to="/UseEffect">UseEffect</Link></li>
-            <li><Link to="/UserLogin">UserLogin</Link></li>
-        </ul>     
+    <div className='boxflex'>
+        
+            <button><Link to="/Food"><p className='small'>Food</p></Link></button>
+            <button><Link to="/Footer"><p className='small'>Footer</p></Link> </button>
+            <button><Link to="/Myheader"><p  className="medium">Myheader</p> </Link></button>
+            <button><Link to="/Button"><p className='small'>Button</p></Link></button>
+            <button><Link to="/Card"><p className='small'>Card</p></Link></button>
+            <button><Link to="/ClickEvent"><p  className="medium">ClickEvent</p></Link></button>
+            <button><Link to="/ColorPick"><p  className="medium">ColorPick</p></Link></button>
+            <button><Link to="/componentA"><p  className="large">ComponentA</p></Link></button>
+            <button><Link to="/DigitalClock"><p  className="large">DigitalClock</p></Link></button>
+            <button><Link to="/Fruits"><p className='small'>Fruits</p></Link></button>
+            <button><Link to="/List"><p className='small'>List</p></Link></button>
+            <button><Link to="/MyComponent"><p  className="large">MyComponent</p></Link></button>
+            <button><Link to="/OnChange"><p className='medium'>OnChange</p></Link></button>
+            <button><Link to="/Planets"><p className='medium'>Planets</p></Link></button>
+            <button><Link to="/ToDoList"><p className='medium'>ToDoList</p></Link></button>
+            <button><Link to="/Updater"><p className='small'>Updater</p></Link></button>
+            <button><Link to="/UseEffect"><p  className="medium">UseEffect</p></Link></button>
+            <button><Link to="/UserLogin"><p  className="medium">UserLogin</p></Link></button>
+        
     </div>
     )
 }

@@ -1,0 +1,261 @@
+.Cards{
+  width: 100%;
+  overflow-x: auto;
+  white-space: nowrap;
+  /*overflow: hidden;
+  cursor: grab;*/
+}/*
+.Cards:active{
+  cursor: grabbing;
+}*/
+
+.card{
+  border: 1px solid rgb(224, 224, 224);
+  border-radius: 10px;
+  box-shadow: 5px 5px 5px black;
+  padding: 20px;
+  margin:  10px;
+  text-align: center;
+  max-width: 250px;
+  display: inline-block;
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+.card .card-image{
+  max-width: 60%;
+  height: auto;
+  border-radius: 50%;
+  margin-bottom: 10px;
+}
+.card .card-title{
+  font-family: 'Courier New', Courier, monospace;
+  margin: 0%;
+  color: black;
+
+}
+.card .card-text{
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  color: black;
+}
+.card:hover{
+  transform: scale(1. 1);
+}
+
+
+.button{
+  background-color: hsl(200, 100%, 50%);
+  color: white;
+  padding: 10px, 20px;
+  border-radius: 5px;
+  border: none;
+  cursor: pointer;
+}
+.fruits{
+  border: 1px solid black;
+  width: 200px;
+  text-align: center;
+  padding: 20px;
+}
+
+.in{
+  border: 1px solid black;
+  color: rgb(120, 149, 120);
+  background-color: green;
+  border-radius: 5px;
+  font-family: 'Courier New', Courier, monospace ;
+  width: 40%;
+  text-align: center;
+  padding: 20px;
+  font-size: 2em;
+}
+.out{
+  border: 1px solid black;
+  color: rgb(140, 93, 93);
+  background-color: rgb(128, 0, 0);
+  border-radius: 5px;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif  ;
+  width: 40%;
+  text-align: center;
+  padding: 20px;
+  font-size: 2em;
+}
+
+.list1{
+  display: none;
+}
+.clickImage{
+  height: 100px;
+  width: 100px;
+}
+
+.mycomp{
+  text-align: center;
+}
+.mycomp h1{
+  font-size: 10em ;
+}
+.btn{
+  background-color: black;
+  color: white;
+  margin: 10px;
+  font-size: 3em;
+  cursor: pointer;;
+}
+.colorContainer{
+  display: flex;
+  align-items: center;
+  flex-flow: column;
+  font-style: oblique;
+  font-size: 2em;
+}
+.colorBlock{
+  height: 250px;
+  width: 250px;
+  border: 1px solid gray;
+  border-radius: 5px;
+  font-family: 'Courier New', Courier, monospace;
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+.makeFlex{
+  display: grid;
+  grid-template-columns: 4fr 4fr;
+  gap: 10px;
+  justify-content: space-between;
+}
+.flex1 , .flex2{
+  transform: translate(250px, 0px);
+  padding: 10px;
+  cursor: pointer;
+}
+
+.todolist{
+  text-align: center;
+  margin-top: 50px;
+  width: 50%;
+}
+.todolist h1{
+  font-size: 4em;
+}
+.list-input{
+  font-size: 1.5em;
+}
+.list-button{
+  font-size: 1.5em;
+  font-weight: bold;
+  background-color: rgb(204, 0, 255);
+}
+.list-button:hover{
+  background-color:  rgb(128, 0, 160);
+}
+.remove-list, .up-list, .down-list{
+  padding: 5px;
+  font-weight: bold;
+  border-radius: 5px;
+}
+.remove-list{
+  background-color: rgb(255, 77, 77);
+}
+.remove-list:hover{
+  background-color: rgb(255, 18, 18);
+}
+.up-list, .down-list{
+  background-color: rgb(127, 255, 77);
+}
+.up-list:hover, .down-list:hover{
+  background-color: rgba(45, 157, 0, 0.789);
+}
+
+.inputlist span{
+  font-size: 1.4em;
+  flex: 1;
+  background-color: blue;
+}
+.ordered-list{
+  padding: 0;
+}
+.inputlist{
+  margin-bottom: 10px;
+  font-weight: bold;
+  padding: 0;
+  display: flex;
+}
+.clock-body{
+  background-image: url("https://images.hdqwalls.com/wallpapers/breathtaking-scenery-landscape-view-m4.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  min-height: 100vh;
+  align-items: center;
+} */
+.clock-div{
+  backdrop-filter: blur(3px);
+}
+.clock{
+  font-size: 6em;
+  color: white;
+  font-family: monospace;
+  font-weight: bold;
+  text-shadow: 3px 3px 5px black;
+}
+/* body{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: rgb(223, 220, 220); 
+}*/
+.display{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border: 5px solid black;
+  border-radius: 200px;
+  padding : 100px;
+  background-color: white;
+  margin-top: 100px;
+}
+
+.timer{
+  display: flex;
+  flex-direction: column;
+  font-size: 5rem;
+  font-family: monospace;
+  margin-bottom: 25px;
+  font-weight: bold;
+  align-items: center;
+  text-shadow: 2px 2px 3px;
+}  
+.timer button{
+  font-size: 1.5rem;
+  font-weight: bold;
+  padding: 10px 20px;
+  margin: 5px;
+  min-width: 100px;
+  border: none;
+  border-radius: 20px;
+  cursor: pointer;
+  color: white;
+  transition: background-color 0.5s ease;
+}
+.start-button{
+  background-color: green;
+}
+.start-button:hover{
+  background-color: rgb(0, 88, 0);
+}
+.stop-button{
+  background-color: red;
+}
+.stop-button:hover{
+  background-color: rgb(111, 0, 0);
+}
+.reset-button{
+  background-color: blue;
+}
+.reset-button:hover{
+  background-color: rgb(2, 2, 125);
+}

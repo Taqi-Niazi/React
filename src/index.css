@@ -1,15 +1,22 @@
+/*CSS for Card component*/
 .Cards{
   width: 100%;
-  overflow-x: auto;
+  overflow-x: scroll;
   white-space: nowrap;
+  scrollbar-width: none;
   /*overflow: hidden;
   cursor: grab;*/
-}/*
-.Cards:active{
-  cursor: grabbing;
-}*/
-
+}
+.Cards, .card {
+  user-select: none; /* Standard property */
+  -webkit-user-select: none; /* For Safari */
+  -ms-user-select: none; /* For Internet Explorer/Edge */
+}
+.Cards::-webkit-scrollbar {
+  display: none; /* Chrome, Safari, and Edge */
+}
 .card{
+  background-color: white;
   border: 1px solid rgb(224, 224, 224);
   border-radius: 10px;
   box-shadow: 5px 5px 5px black;
@@ -39,24 +46,16 @@
 }
 .card:hover{
   transform: scale(1. 1);
-}
-
-
-.button{
-  background-color: hsl(200, 100%, 50%);
-  color: white;
-  padding: 10px, 20px;
-  border-radius: 5px;
-  border: none;
   cursor: pointer;
 }
+/* CSS for Fruits Component*/
 .fruits{
   border: 1px solid black;
   width: 200px;
   text-align: center;
   padding: 20px;
 }
-
+/* CSS for UserLogin Component*/
 .in{
   border: 1px solid black;
   color: rgb(120, 149, 120);
@@ -79,15 +78,16 @@
   padding: 20px;
   font-size: 2em;
 }
-
+/* CSS for Planets Component*/
 .list1{
   display: none;
 }
+/* CSS for ClickEvent Component*/
 .clickImage{
   height: 100px;
   width: 100px;
 }
-
+/* CSS for MyComponents Component*/
 .mycomp{
   text-align: center;
 }
@@ -101,6 +101,7 @@
   font-size: 3em;
   cursor: pointer;;
 }
+/* CSS for ColorPick Component*/
 .colorContainer{
   display: flex;
   align-items: center;
@@ -117,6 +118,8 @@
   margin-top: 50px;
   margin-bottom: 50px;
 }
+
+/* CSS for ---- Component*/
 .makeFlex{
   display: grid;
   grid-template-columns: 4fr 4fr;
@@ -128,7 +131,7 @@
   padding: 10px;
   cursor: pointer;
 }
-
+/* CSS for ToDoList Component*/
 .todolist{
   text-align: center;
   margin-top: 50px;
@@ -180,6 +183,7 @@
   padding: 0;
   display: flex;
 }
+/* CSS for DigitalClock Component*/
 .clock-body{
   background-image: url("https://images.hdqwalls.com/wallpapers/breathtaking-scenery-landscape-view-m4.jpg");
   background-position: center;
@@ -208,6 +212,7 @@
   align-items: center;
   background-color: rgb(223, 220, 220); 
 }*/
+/* CSS for ComponentC Component*/
 .display{
   display: flex;
   flex-direction: column;

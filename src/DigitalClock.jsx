@@ -11,7 +11,6 @@ function DigitalClock(){
         return()=>{
             clearInterval(timer)
         }
-
      },[])
      function clockFormat(){
         if (!(time instanceof Date)){

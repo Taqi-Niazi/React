@@ -1,18 +1,32 @@
-body{
-    background-color:#E9F1FA;
-    ;
+body {
+    background-color: #E9F1FA;
 }
-.homeDiv{
-    background-color: #00ABE4;
-    
+
+.homeDiv {
     background: radial-gradient(circle, #00ABE4, #E9F1FA);
     border-radius: 5px; 
-    
+    text-align: center; /* Center text horizontally */
+    padding: 20px; /* Add some padding for space */
+    width: 100%;
 }
-.homeh1{
+
+.homeh1 {
     color: #E9F1FA;
-    text-align: center;
     font-weight: bold;
     font-family: 'Montserrat', sans-serif;
-    font-size: 3em;
+    font-size: 3em; /* Default font size */
+    margin: 0; /* Remove default margin */
+}
+
+/* Media query for smaller screens */
+@media (max-width: 768px) {
+    .homeh1 {
+        font-size: 2em; /* Adjust font size for smaller screens */
+    }
+}
+
+@media (max-width: 480px) {
+    .homeh1 {
+        font-size: 1.5em; /* Further reduce font size for mobile screens */
+    }
 }

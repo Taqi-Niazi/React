@@ -3,7 +3,7 @@ import "./styleProjects.css";
 function Projects(){
     return(
      <> 
-        <div className='boxflex'>
+        <div className='boxgrid'>
         
          <button className='prbutton'><Link to="/Food"><p className='small'>Food</p></Link></button>
          <button className='prbutton'><Link to="/Footer"><p className='small'>Footer</p></Link> </button>

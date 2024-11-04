@@ -1,5 +1,5 @@
 
-.boxflex{
+.boxgrid{
     display: grid;                /* Enables CSS Grid */
   grid-template-columns: repeat(4, 1fr);  /* Creates 4 equal columns */
   grid-gap: 10px;               /* Adds space between items */
@@ -97,4 +97,15 @@
 }
 .large:hover {
     animation: changePositionL 6s alternate ease-in-out infinite; /* Apply the animation on hover */
+}
+
+@media (max-width: 768px) {
+    .boxgrid{
+        grid-template-columns: repeat(3, 1fr);
+    }
+}    
+@media (max-width: 480px) {
+    .boxgrid{
+        grid-template-columns: repeat(2, 1fr);
+    }
 }

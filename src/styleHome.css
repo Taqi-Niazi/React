@@ -1,21 +1,28 @@
 body {
     background-color: #E9F1FA;
+    align-items: center;
 }
+/* .homeBody{
+    
+} */
+
 
 .homeDiv {
     background: radial-gradient(circle, #00ABE4, #E9F1FA);
     border-radius: 5px; 
     text-align: center; /* Center text horizontally */
-    padding: 20px; /* Add some padding for space */
-    width: 100%;
+    padding: 20px;             
+    align-items: center;                
+    margin: auto;
 }
+    
 
 .homeh1 {
     color: #E9F1FA;
     font-weight: bold;
     font-family: 'Montserrat', sans-serif;
     font-size: 3em; /* Default font size */
-    margin: 0; /* Remove default margin */
+    
 }
 
 /* Media query for smaller screens */

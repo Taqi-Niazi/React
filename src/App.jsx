@@ -1,9 +1,6 @@
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import Projects from './Projects';
 import Home from "./Home";
-import Food from "./Food";
-import Footer from "./Footer";
-import Myheader from "./Myheader";
 import Button from './Button';
 import Card from "./Card";
 import ClickEvent from "./ClickEvent";
@@ -34,9 +31,6 @@ function App() {
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/Projects" element={<Projects />} />
-        <Route path="/Food" element={<Food />} />
-        <Route path="/Footer" element={<Footer />} />
-        <Route path="/Myheader" element={<Myheader />} />
         <Route path="/Button" element={<Button />} />
         <Route path="/Card" element={<Card />} />
         <Route path="/ClickEvent" element={<ClickEvent />} />

@@ -1,13 +1,11 @@
 import {Link} from 'react-router-dom';
 import "./styleProjects.css";
+import Footer from "./Footer";
 function Projects(){
     return(
      <> 
         <div className='boxgrid'>
-        
-         <button className='prbutton'><Link to="/Food"><p className='small'>Food</p></Link></button>
-         <button className='prbutton'><Link to="/Footer"><p className='small'>Footer</p></Link> </button>
-         <button className='prbutton'><Link to="/Myheader"><p  className="medium">Myheader</p> </Link></button>
+
          <button className='prbutton'><Link to="/Button"><p className='small'>Button</p></Link></button>
          <button className='prbutton'><Link to="/Card"><p className='small'>Card</p></Link></button>
          <button className='prbutton'><Link to="/ClickEvent"><p  className="medium">ClickEvent</p></Link></button>
@@ -25,6 +23,7 @@ function Projects(){
          <button className='prbutton'><Link to="/UserLogin"><p  className="medium">UserLogin</p></Link></button>
     
         </div>
+        <Footer/>
      </>
     )
 }

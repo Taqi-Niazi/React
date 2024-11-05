@@ -3,8 +3,8 @@ function Footer(){
     return(
         <footer>
             <p>&copy; 
-                {new Date().getFullYear()}
-                Your website name</p>
+                {new Date().getFullYear()} {' '}
+                React Projects by Taqi Niazi</p>
         </footer>
     );
 }

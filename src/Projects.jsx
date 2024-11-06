@@ -6,7 +6,7 @@ function Projects(){
      <> 
         <div className='boxgrid'>
 
-         <button className='prbutton'><Link to="/Button"><p className='small'>Button</p></Link></button>
+         <button className='prbutton'><Link to="/Styling"><p className='small'>Styling</p></Link></button>
          <button className='prbutton'><Link to="/Card"><p className='small'>Card</p></Link></button>
          <button className='prbutton'><Link to="/ClickEvent"><p  className="medium">ClickEvent</p></Link></button>
          <button className='prbutton'><Link to="/ColorPick"><p  className="medium">ColorPick</p></Link></button>

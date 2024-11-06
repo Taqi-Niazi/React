@@ -1,7 +1,7 @@
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import Projects from './Projects';
 import Home from "./Home";
-import Button from './Button';
+import Styling from './Styling';
 import Card from "./Card";
 import ClickEvent from "./ClickEvent";
 import ColorPick from "./ColorPick";
@@ -31,7 +31,7 @@ function App() {
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/Projects" element={<Projects />} />
-        <Route path="/Button" element={<Button />} />
+        <Route path="/Styling" element={<Styling />} />
         <Route path="/Card" element={<Card />} />
         <Route path="/ClickEvent" element={<ClickEvent />} />
         <Route path="/ColorPick" element={<ColorPick />} />

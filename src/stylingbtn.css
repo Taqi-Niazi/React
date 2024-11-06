@@ -1,0 +1,117 @@
+/* Centering container */
+.container {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    background:radial-gradient(circle, green, #00ff007a); 
+  }
+  
+  /* Set initial position in the four corners */
+  .box1 {
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
+  
+  .box2 {
+    position: absolute;
+    top: 0;
+    right: 0;
+  }
+  
+  .box3 {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+  }
+  
+  .box4 {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+  }
+  
+  /* Styling for each div element */
+  .normalDiv1, .normalDiv2, .normalDiv3, .normalDiv4 {
+    width: 12vw;
+    height: 23vh;
+    background-color: red;
+    transition: transform 4s ease;
+    border: 1px solid black;
+  }
+  
+  /* Apply animation to move each div towards the center */
+  .styledDiv1, .styledDiv2, .styledDiv3, .styledDiv4 {
+    width: 12vw;
+    height: 23vh;
+    background-color: red;
+    border: 3px solid black;
+    transition: transform 2s ease;
+  }
+  
+  @keyframes move1{
+    0%{ border-radius: 0px;}
+    100%{border-radius: 0 100%;
+        transform: translate(40.5vw, 28vh);
+    }
+  }
+  .styledDiv1 {
+    animation: move1 6s forwards;
+ }
+ @keyframes move2{
+    0%{ border-radius: 0px;}
+    100%{border-radius: 100% 0;
+        transform: translate(-45vw, 28vh);
+    }
+  }
+  .styledDiv2 {
+    animation: move2 6s forwards;
+  }
+  @keyframes move3{
+    0%{ border-radius: 0px;}
+    100%{border-radius: 0 100%;
+        transform: translate(40.5vw, -45vh) rotate(47deg);
+    }
+  } 
+  .styledDiv3 {
+    animation: move3 6s forwards;
+  }
+  @keyframes move4{
+    0%{ border-radius: 0px;}
+    100%{border-radius: 100% 0;
+        transform: translate(-45vw, -45vh) rotate(42deg);
+    }
+  }
+  .styledDiv4 {
+    animation: move4 6s forwards;
+  }
+  
+  /* Styling for the "flower stick" element in the center */
+  .stick {
+    height: 50vh;
+    width: 15vw;
+    border: 4px solid black;
+    border-radius: 0px 100px 100px 100px;
+    border-right: 0px;
+    border-top: 0px;
+    border-left: -1px;
+    border-bottom: 0px;
+    position: absolute;
+    top: 50%;  /* Center vertically */
+    left: 50%; /* Center horizontally */
+    transform: translate(-15%, -20%); /* Offset to precisely center it */
+  }
+  
+  /* Button styling */
+  button {
+    border: 1px solid black;
+    border-radius: 10px;
+    background-color: red;
+    padding: 5px;
+    font-size: 1.1em;
+    z-index: 1; /* Keeps buttons above the div elements */
+    position: relative;
+  }
+  

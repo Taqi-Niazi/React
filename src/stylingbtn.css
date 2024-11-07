@@ -178,7 +178,7 @@
   }
   @keyframes move3 {
       100% {
-          transform: translate(35vw, -44.5vh) rotate(-41deg);
+          transform: translate(35vw, -45vh) rotate(-41deg);
           border-radius: 100% 0;
           width: 23vw;
           height: 12vh;
@@ -186,7 +186,7 @@
   }
   @keyframes move4 {
       100% {
-          transform: translate(-35vw, -44.5vh) rotate(45deg);
+          transform: translate(-35vw, -45vh) rotate(45deg);
           border-radius: 100% 0;
           width: 24vw;
           height: 12vh;

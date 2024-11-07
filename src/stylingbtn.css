@@ -162,7 +162,7 @@
 
   @keyframes move1 {
       100% {
-          transform: translate(35vw, 37vh) rotate(0deg);
+          transform: translate(35vw, 37vh) rotate(-5deg) ;
           border-radius: 0 100%;
           width: 25vw;
           height: 13vh;
@@ -170,7 +170,7 @@
   }
   @keyframes move2 {
       100% {
-          transform: translate(-35vw, 37vh) rotate(0deg);
+          transform: translate(-35vw, 37vh) rotate(5deg) ;
           border-radius: 100% 0;
           width: 25vw;
           height: 13vh;
@@ -178,17 +178,17 @@
   }
   @keyframes move3 {
       100% {
-          transform: translate(37vw, -45vh) rotate(-47deg);
+          transform: translate(35vw, -44.5vh) rotate(-41deg);
           border-radius: 100% 0;
-          width: 20vw;
+          width: 23vw;
           height: 12vh;
       }
   }
   @keyframes move4 {
       100% {
-          transform: translate(-38vw, -45vh) rotate(40deg);
+          transform: translate(-35vw, -44.5vh) rotate(45deg);
           border-radius: 100% 0;
-          width: 20vw;
+          width: 24vw;
           height: 12vh;
       }
   }

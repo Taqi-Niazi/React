@@ -27,13 +27,13 @@
     }
     return(
         <div className='mycomp'>
-         <h1>{num}</h1>
+         <h2>{num}</h2>
          <button className='btn' onClick={decrement}>Decrement</button>
          <button className='btn' onClick={reset}>Reset</button>
          <button className='btn' onClick={increment}>Increment</button>
-
+         <br />
+         <button className='togBtn' onClick={naming}>Created By~</button>
          <h1>{name}</h1>
-         <button className='btn' onClick={naming}>Set Name</button>
 
         </div>
     );

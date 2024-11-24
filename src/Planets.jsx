@@ -11,7 +11,7 @@ function Planets({showList}){
         {id: 8, name: "Neptune", size : 49528, Distance :4497000000}
     ]
     planets.sort((a,b)=>a.size - b.size);
-    const result = planets.map(planet => <li key={planet.id}>{planet.name} : {planet.size}km</li>)
+    const result = planets.map(planet => <li key={planet.id}>{planet.name} : {planet.size}km</li>);
 
     planets.sort((a,b)=>a.Distance - b.Distance);
     const result2 = planets.map(planet => <li key={planet.id}>{planet.name} : {planet.Distance}km</li>)

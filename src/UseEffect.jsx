@@ -38,8 +38,9 @@ function UseEffect(){
            {/*<h1 style={{color:color}}>Count : {count} Color: {color}</h1>
            <button onClick={addCount}>Increment</button>
            <button onClick={changeColor}>Change</button>*/}
-           <h1>Height : {height}</h1>
+           <center><h1>Height : {height}</h1>
            <h1>Width : {width}</h1>
+           <h3>Screen size is displayed above and in the title.</h3></center>
            </>
            )
 }

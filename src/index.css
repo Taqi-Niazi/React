@@ -132,57 +132,94 @@
   cursor: pointer;
 }
 /* CSS for ToDoList Component*/
-.todolist{
+.todolist {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   text-align: center;
-  margin-top: 50px;
+  margin: 50px auto;
   width: 50%;
+  min-height: 100vh; /* Ensures it takes at least the full height of the screen */
 }
-.todolist h1{
+
+.todolist h1 {
   font-size: 4em;
+  margin-bottom: 20px; /* Add space below the title */
 }
-.list-input{
+
+.list-input {
   font-size: 1.5em;
+  padding: 10px;
+  margin-bottom: 10px; /* Adds space between input and button */
+  width: 80%; /* Adjust width for better visual appearance */
+  border: 2px solid #ccc;
+  border-radius: 5px;
 }
-.list-button{
+
+.list-button {
   font-size: 1.5em;
   font-weight: bold;
   background-color: rgb(204, 0, 255);
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
 }
-.list-button:hover{
-  background-color:  rgb(128, 0, 160);
+
+.list-button:hover {
+  background-color: rgb(128, 0, 160);
 }
-.remove-list, .up-list, .down-list{
-  padding: 5px;
+
+.remove-list, .up-list, .down-list {
+  padding: 5px 10px;
   font-weight: bold;
   border-radius: 5px;
+  cursor: pointer;
+  margin-left: 5px; /* Adds space between buttons */
 }
-.remove-list{
+
+.remove-list {
   background-color: rgb(255, 77, 77);
 }
-.remove-list:hover{
+
+.remove-list:hover {
   background-color: rgb(255, 18, 18);
 }
-.up-list, .down-list{
+
+.up-list, .down-list {
   background-color: rgb(127, 255, 77);
 }
-.up-list:hover, .down-list:hover{
+
+.up-list:hover, .down-list:hover {
   background-color: rgba(45, 157, 0, 0.789);
 }
 
-.inputlist span{
+.inputlist span {
   font-size: 1.4em;
   flex: 1;
   background-color: blue;
+  color: white; /* Ensure text is readable against the blue background */
+  padding: 5px;
+  border-radius: 5px;
 }
-.ordered-list{
+
+.ordered-list {
   padding: 0;
+  margin-top: 20px; /* Adds space above the list */
+  list-style-type: none; /* Removes default numbering */
+  width: 80%; /* Adjust the list width */
 }
-.inputlist{
+
+.inputlist {
   margin-bottom: 10px;
   font-weight: bold;
-  padding: 0;
+  padding: 10px;
   display: flex;
+  align-items: center;
+  background-color: #f4f4f4;
+  border-radius: 5px;
 }
+
 /* CSS for DigitalClock Component*/
 .clock-body {
   background-image: url("https://images.hdqwalls.com/wallpapers/breathtaking-scenery-landscape-view-m4.jpg");

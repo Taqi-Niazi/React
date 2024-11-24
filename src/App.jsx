@@ -4,13 +4,13 @@ import Home from "./Home";
 import Styling from './Styling';
 import Card from "./Card";
 import ColorPick from "./ColorPick";
-import ComponentA from "./componentA";
+import ComponentC from "./componentC";
 import DigitalClock from "./DigitalClock";
 import MyComponent from './MyComponent';
 import OnChange from "./OnChange";
 import ToDoList from "./ToDoList";
 import Updater from "./Updater";
-import UseEffect from "./UseEffect";
+import UseEffect from "./UseEffect"; 
 
 function App() {
   
@@ -26,12 +26,11 @@ function App() {
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/Projects" element={<Projects />} />
-        <Route path="/Styling" element={<Styling />} />
-        <Route path="/Card" element={<Card />} />
+        <Route path="/Flower" element={<Styling />} />
         <Route path="/ColorPick" element={<ColorPick />} />
-        <Route path="/componentA" element={<ComponentA />} />
+        <Route path="/StopWatch" element={<ComponentC />} />
         <Route path="/DigitalClock" element={<DigitalClock />} />
-        <Route path="/MyComponent" element={<MyComponent />} />
+        <Route path="/IncDecr" element={<MyComponent />} />
         <Route path="/OnChange" element={<OnChange />} />
         <Route path="/ToDoList" element={<ToDoList />} />
         <Route path="/Updater" element={<Updater />} />

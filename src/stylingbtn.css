@@ -5,7 +5,7 @@
     justify-content: center;
     align-items: center;
     position: relative;
-    background:radial-gradient(circle, green, #00ff007a); 
+    background:radial-gradient(circle, rgba(0, 0, 0, 0.94) , white 500%); 
   }
   
   /* Set initial position in the four corners */
@@ -37,7 +37,7 @@
   .normalDiv1, .normalDiv2, .normalDiv3, .normalDiv4 {
     width: 12vw;
     height: 23vh;
-    background-color: red;
+    background-color: white;
     transition: transform 4s ease;
     border: 1px solid black;
   }
@@ -46,7 +46,7 @@
   .styledDiv1, .styledDiv2, .styledDiv3, .styledDiv4 {
     width: 12vw;
     height: 23vh;
-    background-color: red;
+    background-color: white;
     border: 3px solid black;
     transition: transform 2s ease;
   }
@@ -92,7 +92,7 @@
   .stick {
     height: 50vh;
     width: 15vw;
-    border: 4px solid black;
+    border: 4px solid rgb(255, 255, 255);
     border-radius: 0px 100px 100px 100px;
     border-right: 0px;
     border-top: 0px;
@@ -108,7 +108,7 @@
   button {
     border: 1px solid black;
     border-radius: 10px;
-    background-color: red;
+    background-color: white;
     padding: 5px;
     font-size: 1.1em;
     z-index: 1; /* Keeps buttons above the div elements */

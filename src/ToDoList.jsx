@@ -2,7 +2,7 @@ import React, {useState} from 'react';
 
 function ToDoList(){
 
-    const[task, setTask] = useState(["eat","sleep","repeat"]);
+    const[task, setTask] = useState(["Eat","Sleep","Repeat"]);
     const[newTask, setNewTask] = useState([]);
 
     function input(event){
